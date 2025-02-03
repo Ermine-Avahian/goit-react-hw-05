@@ -1,0 +1,18 @@
+.movieList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link {
+  font-size: 1rem;
+  transition: color 0.1s ease;
+  cursor: default;
+}
+
+.link:hover,
+.link:active {
+  color: #50adeb;
+  font-weight: bold;
+  text-decoration: underline;
+}

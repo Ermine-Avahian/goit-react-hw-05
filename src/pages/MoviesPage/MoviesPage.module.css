@@ -1,0 +1,57 @@
+.container {
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.movieList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link {
+  font-size: 1rem;
+  transition: color 0.1s ease;
+  cursor: default;
+}
+
+.link:hover,
+.link:active {
+  color: #50adeb;
+  font-weight: bold;
+  text-decoration: underline;
+}

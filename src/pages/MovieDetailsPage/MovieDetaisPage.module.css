@@ -1,0 +1,79 @@
+.movieDetails {
+  padding: 20px;
+}
+
+.goBack {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; 
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; 
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.goBack:hover {
+  background-color: #0056b3; 
+}
+
+.goBack:active {
+  transform: scale(0.98); 
+}
+
+
+.content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.movieImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /
+}
+
+
+.textContent {
+  flex-basis: 55%; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.textContent p {
+  font-size: 16px;
+}
+
+.textContent h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link {
+  font-size: 1rem;
+  transition: color 0.1s ease;
+  cursor: default;
+}
+
+.link:hover,
+.link:active {
+  color: #50adeb;
+  font-weight: bold;
+}

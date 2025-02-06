@@ -18,10 +18,8 @@ const MoviesPage = () => {
         setMovies([]);
         return;
       }
-
       setLoading(true);
       setError(null);
-
       try {
         const data = await fetchSearchMovie(query);
         setMovies(data.length ? data : []);
@@ -37,9 +35,9 @@ const MoviesPage = () => {
 
   const handleChangeQuery = (newValue) => {
     if (!newValue.trim()) {
-      setSearchParams({}); 
+      setSearchParams({});
     } else {
-      setSearchParams({ query: newValue }); 
+      setSearchParams({ query: newValue });
     }
   };
 
@@ -63,7 +61,7 @@ const MoviesPage = () => {
           </button>
         </Form>
       </Formik>
-      {loading && <p>Loading...</p>} 
+      {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       <ul className={s.movieList}>
         {movies.length > 0

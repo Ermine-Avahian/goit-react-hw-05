@@ -1,0 +1,26 @@
+.movieList {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 120px;
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.charactetr {
+  font-size: 14px;
+  color: #666;
+}

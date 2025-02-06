@@ -1,7 +1,14 @@
 import { Suspense, useEffect, useRef, useState } from "react";
-import { Link, Outlet, useLocation, useParams } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  Outlet,
+  useLocation,
+  useParams,
+} from "react-router-dom";
 import { fetchMovieById } from "../../services/api";
 import s from "./MovieDetaisPage.module.css";
+import clsx from "clsx";
 
 const MovieDetailsPage = () => {
   const location = useLocation();
@@ -20,6 +27,11 @@ const MovieDetailsPage = () => {
   if (!movie) {
     return null;
   }
+
+  const buildLinkClass = ({ isActive }) => {
+    return clsx(s.link, isActive && s.active);
+  };
+
   return (
     <div className={s.movieDetails}>
       <Link to={goBackRef.current} className={s.goBack}>
@@ -47,14 +59,14 @@ const MovieDetailsPage = () => {
       <nav>
         <ul className={s.list}>
           <li>
-            <Link to="cast" className={s.link}>
+            <NavLink to="cast" className={buildLinkClass}>
               Cast
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="reviews" className={s.link}>
+            <NavLink to="reviews" className={buildLinkClass}>
               Reviews
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

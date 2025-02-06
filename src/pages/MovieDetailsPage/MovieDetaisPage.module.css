@@ -7,23 +7,22 @@
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #007bff; 
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
-  text-decoration: none; 
+  text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .goBack:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
 .goBack:active {
-  transform: scale(0.98); 
+  transform: scale(0.98);
 }
-
 
 .content {
   display: flex;
@@ -31,16 +30,14 @@
   margin-top: 20px;
 }
 
-
 .movieImage {
   width: 100%;
   height: auto;
-  border-radius: 8px; /
+  border-radius: 8px;
 }
 
-
 .textContent {
-  flex-basis: 55%; 
+  flex-basis: 55%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -66,14 +63,18 @@
   gap: 5px;
 }
 
-.link {
+a {
   font-size: 1rem;
   transition: color 0.1s ease;
-  cursor: default;
 }
 
-.link:hover,
-.link:active {
+a:hover {
   color: #50adeb;
   font-weight: bold;
+}
+
+.active {
+  color: #50adeb;
+  font-weight: bold;
+  text-decoration: underline;
 }
